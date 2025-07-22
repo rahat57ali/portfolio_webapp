@@ -6,12 +6,11 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 
 function App() {
-  const [activeSection, setActiveSection] = useState('');
+  const [activeSection, setActiveSection] = useState('about');
 
   // Effect for handling the cursor glow
   useEffect(() => {
     const handleMouseMove = (e) => {
-      // Set the CSS variables directly on the body for the background effect
       document.body.style.setProperty('--mouse-x', `${e.clientX}px`);
       document.body.style.setProperty('--mouse-y', `${e.clientY}px`);
     };
@@ -25,32 +24,38 @@ function App() {
 
   // Effect for handling scroll-spy active navigation link
   useEffect(() => {
-    const sections = document.querySelectorAll('main section');
+    const handleScroll = () => {
+      const sections = ['about', 'experience', 'projects'];
+      const scrollPosition = window.scrollY + (window.innerHeight / 2);
 
-    const observerOptions = {
-      root: null, // observes intersections relative to the viewport
-      rootMargin: '-50% 0px -50% 0px', // Triggers when the middle of a section crosses the vertical center of the viewport
-      threshold: 0,
-    };
+      let currentSectionId = '';
+      let minDistance = Infinity;
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
+      sections.forEach(id => {
+        const section = document.getElementById(id);
+        if (section) {
+          // Calculate the distance from the viewport center to the section's center
+          const distance = Math.abs(scrollPosition - (section.offsetTop + section.offsetHeight / 2));
+          if (distance < minDistance) {
+            minDistance = distance;
+            currentSectionId = id;
+          }
         }
       });
-    }, observerOptions);
 
-    sections.forEach(section => {
-      observer.observe(section);
-    });
+      // Set the active section only if it has changed
+      if (activeSection !== currentSectionId) {
+        setActiveSection(currentSectionId);
+      }
+    };
+    
+    // Use passive listener for better scroll performance
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
-      sections.forEach(section => {
-        observer.unobserve(section);
-      });
+      window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [activeSection]); // Rerun effect if activeSection changes to avoid stale state
 
   return (
     <div className="antialiased">
