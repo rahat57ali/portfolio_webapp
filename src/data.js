@@ -17,11 +17,11 @@ export const experienceData = [
   
   export const projectsData = [
     {
-      title: "brittanychiang.com v4",
-      description: "An earlier version of my personal portfolio, built with Gatsby and hosted on Netlify.",
-      imageUrl: "https://brittanychiang.com/images/projects/v4.png",
-      link: "https://v4.brittanychiang.com/",
-      technologies: [],
+      title: "Contact App Manager",
+      description: "A Node.js and Express-based RESTful API with MongoDB for CRUD operations on contacts. Features user authentication (JWT), secure endpoints, and middleware for error handling and authorization.",
+      imageUrl: "https://www.zohowebstatic.com/sites/zweb/images/creator/app-deck/contacts-manager-management-ss1.png",
+      link: "https://github.com/rahat57ali/Contact-Manager-App",
+      technologies: ["Node.js", "Express.js", "MongoDB" ,"JWT"],
     },
     {
       title: "Spotify Profile",

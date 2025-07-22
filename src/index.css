@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
-html {
-  
-}
+
 
 :root {
   --bg-color: #f8f8f9;        /* Light Lilac background */
