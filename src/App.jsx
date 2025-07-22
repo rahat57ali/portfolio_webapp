@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import About from './components/About';
 import Experience from './components/Experience';
@@ -29,7 +29,7 @@ function App() {
 
     const observerOptions = {
       root: null, // observes intersections relative to the viewport
-      rootMargin: '0px 0px -40% 0px', // Adjusts the intersection "box". Triggers when a section is in the top 60% of the viewport.
+      rootMargin: '-50% 0px -50% 0px', // Triggers when the middle of a section crosses the vertical center of the viewport
       threshold: 0,
     };
 

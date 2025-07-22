@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --bg-color: #f8f8f9;        /* Light Lilac background */
   --primary-text: #111439;    /* Dark Blue for main text */
