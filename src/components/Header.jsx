@@ -20,7 +20,7 @@ function Header({ activeSection }) {
       <div>
         <h1 className="text-4xl font-bold tracking-tight text-[#111439] sm:text-5xl">Rahat Ali</h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-[#111439] sm:text-xl">Junior Backend Developer</h2>
-        <p className="mt-4 max-w-xs leading-normal text-[#5B5F7E]">I build accessible, pixel-perfect digital experiences for the web.</p>
+        <p className="mt-4 max-w-xs leading-normal text-[#5B5F7E]">I develop efficient, secure, and maintainable server-side applications to support seamless web experiences.</p>
         <nav className="nav hidden lg:block" aria-label="In-page jump links">
           <ul className="mt-16 w-max">
             {navLinks.map(link => (
