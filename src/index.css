@@ -11,15 +11,30 @@
 }
 
 body {
-  background-image: url('./assets/mac-image.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: var(--bg-color);
+  background-image:
+    /* Layer 1: Vibrant Purple/Blue on the left */
+    radial-gradient(
+      ellipse 50% 80% at 20% 40%,
+      rgba(103, 114, 229, 0.1),
+      transparent
+    ),
+    /* Layer 2: Bright Cyan towards the middle */
+    radial-gradient(
+      ellipse 50% 70% at 60% 50%,
+      rgba(66, 211, 237, 0.1),
+      transparent
+    ),
+    /* Layer 3: Soft Pink/Magenta for depth */
+    radial-gradient(
+      ellipse 40% 80% at 85% 60%,
+      rgba(246, 164, 184, 0.08),
+      transparent
+    );
   background-attachment: fixed;
   color: var(--secondary-text);
   font-family: 'Inter', sans-serif;
 }
-
 
 .nav-link.active .nav-indicator {
   width: 60px;
