@@ -1,43 +1,44 @@
 @import "tailwindcss";
 
-
 :root {
-  --bg-color: #0a192f;
-  --light-navy: #112240;
-  --lightest-navy: #233554;
-  --slate: #8892b0;
-  --light-slate: #a8b2d1;
-  --lightest-slate: #ccd6f6;
-  --green: #64ffda;
+  --bg-color: #f8f8f9;        /* Light Lilac background */
+  --primary-text: #111439;    /* Dark Blue for main text */
+  --secondary-text: #5B5F7E;  /* Lighter Blue-Gray for secondary text */
+  --accent-color: #6772e5;    /* Stripe's vibrant Purple for accents */
+  --card-bg: #ffffff;         /* White for project cards */
+  --card-bg-hover: #fdfdff;
+  --border-color: #e6e6e6;
 }
 
 body {
-  background-color: var(--bg-color);
-  background-image: radial-gradient(
-    600px circle at var(--mouse-x) var(--mouse-y),
-    rgba(29, 78, 216, 0.15),
-    transparent 80%
-  );
+  background-image: url('./assets/mac-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  color: var(--slate);
+  color: var(--secondary-text);
   font-family: 'Inter', sans-serif;
 }
 
+
 .nav-link.active .nav-indicator {
   width: 60px;
-  background-color: var(--lightest-slate);
+  background-color: var(--primary-text);
 }
 
 .nav-link.active .nav-text {
-  color: var(--lightest-slate);
+  color: var(--primary-text);
 }
 
 .project-card {
-    background-color: var(--light-navy);
+    background-color: var(--card-bg);
     transition: all 0.2s ease-out;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
 }
 
 .project-card:hover {
     transform: translateY(-6px);
-    background-color: var(--lightest-navy);
+    background-color: var(--card-bg-hover);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
