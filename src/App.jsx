@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Lenis from '@studio-freight/lenis'; // Import Lenis
 import Header from './components/Header';
 import About from './components/About';
 import Experience from './components/Experience';
@@ -8,18 +9,16 @@ import Footer from './components/Footer';
 function App() {
   const [activeSection, setActiveSection] = useState('about');
 
-  // Effect for handling the cursor glow
+  // Effect for setting up Lenis smooth scrolling
   useEffect(() => {
-    const handleMouseMove = (e) => {
-      document.body.style.setProperty('--mouse-x', `${e.clientX}px`);
-      document.body.style.setProperty('--mouse-y', `${e.clientY}px`);
-    };
+    const lenis = new Lenis();
 
-    window.addEventListener('mousemove', handleMouseMove);
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
 
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
+    requestAnimationFrame(raf);
   }, []);
 
   // Effect for handling scroll-spy active navigation link
@@ -27,14 +26,12 @@ function App() {
     const handleScroll = () => {
       const sections = ['about', 'experience', 'projects'];
       const scrollPosition = window.scrollY + (window.innerHeight / 2);
-
       let currentSectionId = '';
       let minDistance = Infinity;
 
       sections.forEach(id => {
         const section = document.getElementById(id);
         if (section) {
-          // Calculate the distance from the viewport center to the section's center
           const distance = Math.abs(scrollPosition - (section.offsetTop + section.offsetHeight / 2));
           if (distance < minDistance) {
             minDistance = distance;
@@ -42,20 +39,15 @@ function App() {
           }
         }
       });
-
-      // Set the active section only if it has changed
       if (activeSection !== currentSectionId) {
         setActiveSection(currentSectionId);
       }
     };
-    
-    // Use passive listener for better scroll performance
     window.addEventListener('scroll', handleScroll, { passive: true });
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [activeSection]); // Rerun effect if activeSection changes to avoid stale state
+  }, [activeSection]);
 
   return (
     <div className="antialiased">
