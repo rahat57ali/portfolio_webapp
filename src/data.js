@@ -11,7 +11,7 @@ export const experienceData = [
       title: "Junior C++ Developer",
       company: "7GFuse SMC PVT LTD",
       description: "Developed and optimized web applications with modern front-end and back-end technologies, improving performance, scalability, and reliability for high user concurrency.",
-      technologies: ["C++", "Drogon Framework", "JavaScript", "RESTful APIs", "Redis"],
+      technologies: ["C++", "Drogon Framework", "JavaScript", "RESTful APIs", "Redis"] ,
     }
   ];
   
@@ -19,7 +19,7 @@ export const experienceData = [
     {
       title: "Contact App Manager",
       description: "A Node.js and Express-based RESTful API with MongoDB for CRUD operations on contacts. Features user authentication (JWT), secure endpoints, and middleware for error handling and authorization.",
-      imageUrl: "https://www.zohowebstatic.com/sites/zweb/images/creator/app-deck/contacts-manager-management-ss1.png",
+      imageUrl: "https://www.zohowebstatic.com/sites/zweb/images/creator/app-deck/contacts-manager-management-ss1.png" ,
       link: "https://github.com/rahat57ali/Contact-Manager-App",
       technologies: ["Node.js", "Express.js", "MongoDB" ,"JWT"],
     },
