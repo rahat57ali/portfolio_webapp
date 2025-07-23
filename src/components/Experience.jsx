@@ -29,7 +29,7 @@ function Experience() {
                 </li>
             ))}
             </ol>
-            <div className="mt-12"><a className="group inline-flex items-center font-semibold leading-tight text-[#111439]" aria-label="View Full Resume" target='_blank' href="/portfolio_webapp/CV.pdf"><span><span className="border-b border-transparent pb-px transition group-hover:border-[#6772e5] motion-reduce:transition-none">View Full Resume</span><span className="whitespace-nowrap"><span className="ml-1 inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">→</span></span></span></a></div>
+            <div className="mt-12"><a className="group inline-flex items-center font-semibold leading-tight text-[#111439]" aria-label="View Full Resume" target='_blank' href="/CV.pdf"><span><span className="border-b border-transparent pb-px transition group-hover:border-[#6772e5] motion-reduce:transition-none">View Full Resume</span><span className="whitespace-nowrap"><span className="ml-1 inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">→</span></span></span></a></div>
         </div>
     </section>
   );
