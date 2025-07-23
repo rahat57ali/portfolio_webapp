@@ -48,7 +48,7 @@ function Projects() {
                 </a>
             ))}
         </div>
-        <div className="mt-12"><a className="group inline-flex items-center font-semibold leading-tight text-[#111439]" aria-label="View Full Project Archive" href="/archive"><span><span className="border-b border-transparent pb-px transition group-hover:border-[#6772e5] motion-reduce:transition-none">View Full Project Archive</span><span className="whitespace-nowrap"><span className="ml-1 inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">→</span></span></span></a></div>
+        <div className="mt-12"><a className="group inline-flex items-center font-semibold leading-tight text-[#111439]" aria-label="View Full Project Archive" target="_blank" href="https://github.com/rahat57ali?tab=repositories"><span><span className="border-b border-transparent pb-px transition group-hover:border-[#6772e5] motion-reduce:transition-none">View Full Project Archive</span><span className="whitespace-nowrap"><span className="ml-1 inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">→</span></span></span></a></div>
     </section>
   );
 }

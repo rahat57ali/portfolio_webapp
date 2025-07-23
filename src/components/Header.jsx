@@ -1,5 +1,5 @@
 import React from 'react';
-import { GithubIcon, LinkedinIcon, InstagramIcon, TwitterIcon } from './Icons';
+import { GithubIcon, LinkedinIcon, InstagramIcon, TwitterIcon, EmailIcon } from './Icons';
 
 const navLinks = [
     { id: 'about', title: 'About' },
@@ -8,10 +8,10 @@ const navLinks = [
 ];
 
 const socialLinks = [
-    { label: 'GitHub', url: 'https://github.com/bchiang7', icon: GithubIcon },
-    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/bchiang7/', icon: LinkedinIcon },
-    { label: 'Instagram', url: 'https://www.instagram.com/bchiang7', icon: InstagramIcon },
-    { label: 'Twitter', url: 'https://twitter.com/bchiang7', icon: TwitterIcon },
+    { label: 'GitHub', url: 'https://github.com/rahat57ali', icon: GithubIcon },
+    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/rahat-ali-486665185/', icon: LinkedinIcon },
+    { label: 'Email', url: 'mailto:rahatalisoomro10@gmail.com', icon: EmailIcon },
+    
 ]
 
 function Header({ activeSection }) {

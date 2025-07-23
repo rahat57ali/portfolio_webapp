@@ -4,14 +4,14 @@ export const experienceData = [
       title: "Junior Software Developer",
       company: "Rasant Solutions",
       description: "Optimized responsive web interfaces and scalable Java-based backend systems, enhanced database performance, and collaborated in agile teams to deliver enterprise web solutions.",
-      technologies: ["Java","Grails","Groovy"],
+      technologies: ["Java", "Grails", "Groovy", "SQL Server", "MVC Architecture", "ORM"],
     },
     {
       date: "2023 — 2024",
       title: "Junior C++ Developer",
       company: "7GFuse SMC PVT LTD",
       description: "Developed and optimized web applications with modern front-end and back-end technologies, improving performance, scalability, and reliability for high user concurrency.",
-      technologies: ["Nodejs"],
+      technologies: ["C++", "Drogon Framework", "JavaScript", "RESTful APIs", "Redis"],
     }
   ];
   
@@ -24,31 +24,32 @@ export const experienceData = [
       technologies: ["Node.js", "Express.js", "MongoDB" ,"JWT"],
     },
     {
-      title: "Spotify Profile",
-      description: "A web app for visualizing personalized Spotify data. View your top artists, tracks, recently played songs, and detailed audio information about each track.",
-      imageUrl: "https://brittanychiang.com/images/projects/spotify-profile.png",
+      title: "Spring Boot CRM API with Invoice Management",
+      description: "A RESTful CRM API that manages leads and invoices with automated status tracking. Implements CRUD operations and scheduled invoice updates using Quartz for efficient business workflow management.",
+      imageUrl: "https://d1eipm3vz40hy0.cloudfront.net/images/AMER/productimageofinsightlycrmsoftware.png",
       link: "https://spotify-profile.herokuapp.com/",
-      technologies: ["React", "Node.js"],
+      technologies: ["Spring Boot", "H2 Database", "Quartz Scheduler", "JPA/Hibernate"],
     },
   ];
   
   export const noteworthyProjectsData = [
     {
-      title: "Integrating Algolia Search with WordPress Multisite",
-      description: "A custom WordPress plugin to leverage Algolia’s search capabilities across a multisite network.",
-      link: "https://github.com/bchiang7/wordpress-algolia",
-      technologies: ["Algolia", "WordPress", "PHP"],
+      title: "Login with Authentication",
+      description: "A complete authentication app with login, register and access control using Node.js, Express, Passport, Mongoose and more.",
+      link: "https://github.com/rahat57ali/login_with_authentication",
+      technologies: ["Node.js", "Express.js", "Passport", "Mongoose"],
     },
     {
-      title: "Building a Headless Mobile App CMS",
-      description: "A headless CMS for a mobile app, built with Craft CMS and a custom API layer.",
-      link: "#",
-      technologies: ["Craft CMS", "GraphQL", "Vue.js"],
+      title: "Chat App with Socket.io Node.js",
+      description: "A real-time chat application built with Node.js and Socket.IO that enables instant messaging between multiple users.",
+      link: "https://github.com/rahat57ali/Chat_App_NodeJs_Socket_IO",
+      technologies: ["Node.js", "Socket.IO", "Express.js"],
     },
     {
-      title: "OctoProfile",
-      description: "A nicer look at your GitHub profile and repository stats with data visualizations of your top languages and stars.",
-      link: "https://github.com/bchiang7/octoprofile",
-      technologies: ["Next.js", "Chart.js", "GitHub API"],
+      title: "Chrome Extension with Google OAuth Authentication",
+      description: "A Chrome extension featuring Google OAuth2 login and email/password authentication with role-based access control.",
+      link: "https://github.com/rahat57ali/chrome_extension",
+      technologies: ["Node.js", "Google OAuth2", "JWT", "SQL Server", "Passport.js"],
     },
   ];
+

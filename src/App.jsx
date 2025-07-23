@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Lenis from '@studio-freight/lenis'; // Import Lenis
+import Lenis from '@studio-freight/lenis'; 
 import Header from './components/Header';
 import About from './components/About';
 import Experience from './components/Experience';
@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 function App() {
   const [activeSection, setActiveSection] = useState('about');
 
-  // Effect for setting up Lenis smooth scrolling
+  
   useEffect(() => {
     const lenis = new Lenis();
 
@@ -21,7 +21,7 @@ function App() {
     requestAnimationFrame(raf);
   }, []);
 
-  // Effect for handling scroll-spy active navigation link
+  
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['about', 'experience', 'projects'];
