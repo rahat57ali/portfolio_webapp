@@ -4,14 +4,14 @@ export const experienceData = [
       title: "Junior Software Developer",
       company: "Rasant Solutions",
       description: "Optimized responsive web interfaces and scalable Java-based backend systems, enhanced database performance, and collaborated in agile teams to deliver enterprise web solutions.",
-      technologies: ["Java", "Grails", "Groovy", "SQL Server", "MVC Architecture", "ORM"],
+      technologies: ["Java", "Grails", "Groovy", "SQL Server", "MVC Architecture", "ORM"] ,
     },
     {
       date: "2023 — 2024",
       title: "Junior C++ Developer",
       company: "7GFuse SMC PVT LTD",
       description: "Developed and optimized web applications with modern front-end and back-end technologies, improving performance, scalability, and reliability for high user concurrency.",
-      technologies: ["C++", "Drogon Framework", "JavaScript", "RESTful APIs", "Redis"] ,
+      technologies: ["C++", "Drogon Framework", "JavaScript", "RESTful APIs", "Redis"],
     }
   ];
   
