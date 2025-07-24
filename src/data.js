@@ -27,7 +27,7 @@ export const experienceData = [
       title: "Spring Boot CRM API with Invoice Management",
       description: "A RESTful CRM API that manages leads and invoices with automated status tracking. Implements CRUD operations and scheduled invoice updates using Quartz for efficient business workflow management.",
       imageUrl: "https://d1eipm3vz40hy0.cloudfront.net/images/AMER/productimageofinsightlycrmsoftware.png",
-      link: "https://spotify-profile.herokuapp.com/",
+      link: "https://github.com/rahat57ali/crm_api",
       technologies: ["Spring Boot", "H2 Database", "Quartz Scheduler", "JPA/Hibernate"],
     },
   ];
