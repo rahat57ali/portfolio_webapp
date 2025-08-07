@@ -17,6 +17,13 @@ export const experienceData = [
   
   export const projectsData = [
     {
+      title: "Admin Panel with Quartz Jobs & SOAP Integration",
+      description: "A scalable Grails 6 (Java 17) app featuring an admin dashboard with role-based access, Quartz jobs, email alerts, and a SOAP API for user/purchase management—designed for high performance and maintainability.",
+      imageUrl: "https://www.sourcecodester.com/sites/default/files/2020-07/images/dsfdfs.png" ,
+      link: "https://github.com/rahat57ali/grails-adminpanel-soap",
+      technologies: ["Grails 6", "Java 17", "Quartz Scheduler", "Apache CXF (SOAP)", "GORM", "H2 Database", "Grails Mail Plugin", "Spring Security"],
+    },
+    {
       title: "Contact App Manager",
       description: "A Node.js and Express-based RESTful API with MongoDB for CRUD operations on contacts. Features user authentication (JWT), secure endpoints, and middleware for error handling and authorization.",
       imageUrl: "https://www.zohowebstatic.com/sites/zweb/images/creator/app-deck/contacts-manager-management-ss1.png" ,
