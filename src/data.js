@@ -1,6 +1,13 @@
 export const experienceData = [
     {
-      date: "2024 — Present",
+      date: "2025 — Present",
+      title: "Junior Java Developer",
+      company: "eConceptions",
+      description: "Developed and maintained robust backend services using Grails and Groovy frameworks, ensuring scalable and efficient application performance.",
+      technologies: ["Java", "Spring Boot", "Grails", "Groovy", "MySQL", "CRM"] ,
+    },
+    {
+      date: "2024 — 2025",
       title: "Junior Software Developer",
       company: "Rasant Solutions",
       description: "Optimized responsive web interfaces and scalable Java-based backend systems, enhanced database performance, and collaborated in agile teams to deliver enterprise web solutions.",
